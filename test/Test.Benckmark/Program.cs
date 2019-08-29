@@ -37,7 +37,7 @@ namespace Test.Benckmark
                 }
 
                 var output = await Client.GetSingleContext().CallAsync<Pong>(100, new Ping { PingInfo = "Ping info." });
-                if(output == null)
+                if(output == null || output.PongInfo != "Pong info.")
                 {
                     Console.WriteLine($"Response data is null.");
                     return;
