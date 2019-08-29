@@ -47,7 +47,7 @@ namespace Test.Benckmark
 
                 if(CompleteCount % 10000 == 0)
                 {
-                    Console.WriteLine($"Completed {CompleteCount} ElapsedMilliseconds:{stopwatch.ElapsedMilliseconds}");
+                    Console.WriteLine($"Completed {10000} ElapsedMilliseconds:{stopwatch.ElapsedMilliseconds}");
                     stopwatch.Restart();
                 }
             }
